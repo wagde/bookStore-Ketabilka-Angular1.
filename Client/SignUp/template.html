@@ -1,0 +1,30 @@
+<div class="container">
+	<section id="content">
+		<form action="">
+			<h1> انضم الينا</h1>
+			<div>
+				<input ng-model="name" type="text" placeholder="الاسم الكامل" required="" id="password" />
+			</div>
+			<div>
+				<input  ng-model="email" type="email" placeholder="البريد الالكتروني" required="" id="username" />
+			</div>
+			<div>
+				<input  ng-model="password" type="password" placeholder="اختر كلمة مرور " required="" id="password" />
+			</div>
+			<div>
+				<select ng-model="area" value="البلده">
+					<option value="" disabled selected>المنطقه</option>
+					<option  ng-repeat="city in $ctrl.city" value={{city}}>{{city}}</option>
+				</select>
+				<input ng-model="city" type="text" id="address" placeholder="البلده" required="" id="password" />
+			</div>
+			<div>
+				<input ng-click="$ctrl.regSer.signUp(name,email,password,area,city)" type="submit" value="ادخل" />
+				<span id="errormassage" > </span>
+			</div>
+		</form>
+		<!-- form -->
+	</section>
+	<!-- content -->
+</div>
+<!-- container -->

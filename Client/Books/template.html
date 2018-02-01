@@ -1,0 +1,13 @@
+<div id="mainBooks">
+       
+    <div class="books" ng-repeat="book in $ctrl.books">
+        <h3 id="booktitle" href="#/book/{{book.title}}">{{book.title}} </h3>
+        <br>
+        <img href="#/book/{{book.title}}" class="cover" src={{book.cover}}> {{book.numberOfPages }}
+        <br>
+        <a>
+            <button ng-click="$ctrl.showBook(book.id)" class="exbut">استبدل</button>
+        </a>
+    </div>
+</div>
+<book-component ng-show="$ctrl.bookshow"></book-component>

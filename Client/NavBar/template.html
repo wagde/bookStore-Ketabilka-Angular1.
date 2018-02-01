@@ -1,0 +1,50 @@
+<div class="upnav">
+  <img class="logo" src="../public/img/Logo.png" alt="">
+  <form class="forme" role="search">
+      <div class="forme">
+        <input class="seain" placeholder="Search" name="srch-term" id="srch-term" type="text">
+          <button class="btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </form>
+</div>
+
+<ul id="nav">
+  <li>
+    <a class="showli" ng-click="showDiv = !showDiv">
+      <span ng-click="$ctrl.showli()" >&#9776;</span>
+    </a>
+  </li>
+  <li class="social" >
+     <a class="socialmed" id="facebook" > <i class="fab fa-facebook-square fa-3x"></i></a>
+    <a class="socialmed" id="insta"> <i class="fab fa-instagram fa-3x"></i></a>
+  <a class="socialmed" id="google">    <i class="fab fa-google-plus-square fa-3x"></i></a>
+</li>
+  <li class="respli">
+    <a href="#/"> الرئيسيه
+      <i class="fa fa-home" aria-hidden="true"></i>
+    </a>
+  </li>
+
+  <!-- <li class="respli"> <a  href="#/signup" class="active" href="#home">تسجيل</a></li> -->
+  <li class="respli">
+    <a href="#/signin"> الدخول
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="respli">
+    <a href="#/books"> اختر كتاب
+      <i class="fa fa-book" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="respli">
+    <a href="#/AddBook"> اضف كتاب
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="respli">
+      <a href="#/"> تواصل معنا
+        <i class="fas fa-phone"></i>
+      </a>
+    </li>
+ 
+</ul>

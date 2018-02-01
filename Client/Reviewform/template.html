@@ -1,0 +1,22 @@
+<div id="cont">
+    <div id="form" >
+
+        <h3>Add Review </h3>
+        <span>Name:</span>
+        <br>
+        <input ng-model="name" type="text" name="firstname">
+        <br>
+        <span>City:</span>
+        <br>
+        <input ng-model="location" type="text" name="lastname">
+        <br>
+        <span>Review:</span>
+        <br>
+        <textarea ng-model="Descre">Some text... </textarea>
+        <br>
+        <span>{{Descre}}</span>
+        <br>
+        <input ng-click="$ctrl.reviewformService.addReview(name,location,Descre)" type="submit" value="SEND">
+
+    </div>
+</div>
